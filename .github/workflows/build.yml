@@ -55,6 +55,10 @@ jobs:
         arch: [arm64]
         platform: [macos]
     steps:
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.11'
       - name: Checkout
         uses: actions/checkout@v3
         with:
